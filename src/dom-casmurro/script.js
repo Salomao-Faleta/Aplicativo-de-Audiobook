@@ -38,7 +38,7 @@ function tocarOuPausar(){
 
 //trocar o nome do capítulo
 function trocarNome(){
-    nomeCapitulo.innerHTML = `Capítulo ${capituloAtual}`
+    nomeCapitulo.innerHTML = `Capitulo ${capituloAtual}`
 }
 
 //Trocando o capítulo
@@ -52,7 +52,8 @@ function proximaFaixa(){
 
     trocarNome();
 
-    audioCapitulo.src = `./src/dom-casmurro/${capituloAtual}.mp3`
+    // audioCapitulo.src = `./books/dom-casmurro/${capituloAtual}.mp3`
+    audioCapitulo.src = `./dom-casmurro/${capituloAtual}.mp3`
     tocarFaixa();
 }
 
@@ -66,8 +67,9 @@ function voltarFaixa(){
     }
 
     trocarNome();
-    
-    audioCapitulo.src = `./src/dom-casmurro/${capituloAtual}.mp3`;
+
+    // audioCapitulo.src = `./books/dom-casmurro/${capituloAtual}.mp3`
+    audioCapitulo.src = `./dom-casmurro/${capituloAtual}.mp3`
     tocarFaixa();    
 }
 
